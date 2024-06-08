@@ -1,0 +1,133 @@
+.nav {
+    display: flex;
+    justify-content: space-between; /* aligne les éléments sur les extrémités */
+    align-items: center; /* aligne les éléments verticalement au centre */
+}
+/* .container{
+    position: absolute;
+    top: -10px;
+    z-index: 2;
+} */
+form {
+    width: 50%;    
+    margin: 0 auto;
+    font-weight: 800;
+    color: black;
+}
+#formulaire{
+    width: 100%;    
+    margin-left: auto;
+    margin-top: 0px; 
+    margin-right: auto; 
+}
+#formnais{
+    width: 100%;    
+    margin-left: auto;
+    margin-top: 0px; 
+    margin-right: auto;
+}
+#formacte{
+    width: 90%;    
+    margin-left: auto;
+    margin-top: 0px; 
+    margin-right: auto;
+}
+#head-form{
+  width: 65%;    
+  margin: 0 auto;
+}
+
+
+  
+  label {
+    display: block;
+    margin-bottom: 0px;
+  }
+  
+  input {
+    padding: 2px;
+    margin-bottom: 0px;
+    border-radius: 15px;
+  }
+  input[type="submit"] {
+    background-color: #062def; /* couleur de fond */
+    color: white; /* couleur du texte */
+    padding: 10px 20px; /* espacement intérieur */
+    border: none; /* pas de bordure */
+    border-radius: 15px; /* coins arrondis */
+    cursor: pointer; /* curseur de type pointer */
+    font-size: 16px; /* taille de la police */
+    width: 160px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #05730a; /* couleur de fond au survol */
+  }
+  input[type="reset"] {
+    background-color: #8b0505;
+    color: white;
+    padding: 8px 16px; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 16px; 
+    margin-top: 0px; 
+    width: 160px;
+    border-radius: 15px;
+    margin-left: 20px;
+    }
+
+  input[type="reset"]:hover { 
+    background-color: #d32f2f; 
+}
+/* Styles pour les écrans de petite taille */
+@media only screen and (max-width: 600px) {
+    form {
+      width: 90%;
+      margin: 0 auto;
+      /* margin-top: 60px; */
+    }
+    #head-form{
+      width: 100%;    
+      margin: 0 auto;
+    }
+    
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+    }
+    input[type="reset"] {
+        width: 100%;
+        padding: 10px;
+        margin-left: -2px;
+        margin-top: 10px;
+      }
+  }
+  
+  /* Styles pour les écrans de taille moyenne et grande */
+  @media only screen and (min-width: 601px) {
+    form {
+      width: 50%;
+      margin: 0 auto;
+    }
+    
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin-right: 10px;
+    }
+    
+    input[type="submit"] {
+      width: 30%;
+      padding: 10px;
+    }
+    input[type="reset"] {
+        width: 30%;
+        padding: 10px;
+      }
+  }
